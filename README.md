@@ -4,4 +4,11 @@ For benign and malignant abnormalities, ROI/segmentation masks were provided. Th
 
 For normal images with no abnormalities, the ROI crop was done using a random 512x512 pixels within the breast tissue.
 
-Based on these ROI images, the goal is to use convolutional neural networks and adapt other pretrained models such as ResNet18 to perform accurate classification of benign / malignant abnormalities as well as differentiate normal dense breast tissue from abnormalities.
+Based on these ROI images, 3 main models were used to evaluate performance of
+1. Benign / malignant abnormality classification
+2. Normal dense breast tissue / breast tissue with abnormality classification
+
+Models explored include
+1. Convolutional Neural Network
+2. Pre-trained ResNet18
+3. Multi-Modal Model
