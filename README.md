@@ -6,7 +6,7 @@ Using these ROI-extracted images, models were trained and evaluated for classifi
 
 In addition, a multi-head neural network architecture is explored to incorporate hierarchical medical reasoning. This model includes:
 - An abnormality detection head (normal vs abnormal),
-- A lesion type classification head (e.g., calcification, mass, architectural distortion),
+- A lesion type classification head (calcification vs mass),
 - A malignancy classification head (benign vs malignant), conditioned on learned intermediate representations.
 
 This design is inspired by recent work on structured diagnostic modelling using mixture-of-experts frameworks, where intermediate lesion categorisation improves downstream diagnostic accuracy. In particular, this approach is aligned with the findings of Konaka et al. (2025), who demonstrated improved breast cancer classification performance through the integration of specialised diagnostic pathways for different lesion types using a mixture-of-experts strategy:
